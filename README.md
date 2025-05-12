@@ -1,19 +1,21 @@
 # React Gamification Icons
 
-A collection of gamification icons built with React and Tailwind CSS. This project provides a reusable set of SVG icons that can be easily integrated into any React project.
+A collection of beautiful SVG icons for gamification in React applications. Built with React and Tailwind CSS.
 
 ## Features
 
-- React components for each icon
+- 17+ gamification icons
+- Fully customizable with Tailwind CSS
 - TypeScript support
-- Tailwind CSS integration
-- Easy to use and customize
-- SVG-based icons for crisp rendering at any size
+- Easy to use and integrate
+- Responsive and accessible
 
 ## Installation
 
 ```bash
 npm install react-gamification-icons
+# or
+yarn add react-gamification-icons
 ```
 
 ## Usage
@@ -24,31 +26,52 @@ import { TreasureChest, TreasureMap, GlobalSearch } from 'react-gamification-ico
 function MyComponent() {
   return (
     <div>
-      <TreasureChest className="w-6 h-6" />
-      <TreasureMap className="w-6 h-6" />
-      <GlobalSearch className="w-6 h-6" />
+      <TreasureChest className="w-6 h-6 text-blue-500" />
+      <TreasureMap className="w-6 h-6 text-green-500" />
+      <GlobalSearch className="w-6 h-6 text-purple-500" />
     </div>
   );
 }
 ```
 
+## Available Icons
+
+- TreasureChest
+- TreasureMap
+- GlobalSearch
+- Survey
+- Trivia
+- Exhibitor
+- SocialVote
+- SessionScanner
+- Speakers
+- GalleryPost
+- SocialPhotoPost
+- ActiveUser
+- SponsorScanner
+- ExhibitorsDeal
+- Sponsor
+- SocialPost
+- Session
+
+## Props
+
+All icons accept the following props:
+
+- `size`: number (default: 24)
+- `className`: string (for Tailwind CSS classes)
+- All standard SVG props
+
 ## Development
 
-1. Clone the repository
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Start the development server:
-   ```bash
-   npm run dev
-   ```
-
-## Building
-
-To build the project:
-
 ```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
 npm run build
 ```
 
